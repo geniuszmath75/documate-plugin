@@ -23,4 +23,18 @@
         />
     </extensions>
 
+    <actions>
+        <action
+                id="DocuMate.GenerateDoc"
+                class="com.documate.actions.GenerateDocAction"
+                text="Generate AI Documentation"
+                description="Generate KDoc/Javadoc for the current function or class using Gemini AI">
+
+            <!-- Appears in right-click context menu inside the editor -->
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+
+            <!-- Keyboard shortcut: Ctrl+Shift+D -->
+            <keyboard-shortcut first-keystroke="ctrl shift D" keymap="$default"/>
+        </action>
+    </actions>
 </idea-plugin>
