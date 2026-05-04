@@ -15,8 +15,12 @@
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="MyToolWindow" factoryClass="org.example.MyToolWindowFactory"
-                    icon="AllIcons.Toolwindows.ToolWindowPalette"/>
+        <applicationConfigurable
+                parentId="tools"
+                instance="com.documate.settings.DocuMateConfigurable"
+                id="com.documate.settings.DocuMateConfigurable"
+                displayName="DocuMate"
+        />
     </extensions>
 
 </idea-plugin>
